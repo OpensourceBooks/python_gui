@@ -1,5 +1,9 @@
 # python GUI 教程
 
+```
+sudo apt-get install python3-dev python3-setuptools
+```
+
 所有课件皆使用python3
 
 ### tkinter
