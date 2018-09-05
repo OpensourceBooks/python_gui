@@ -9,7 +9,7 @@ class App():
     def widget(self):
         self.root = Tk()
         self.root.title("app")
-        img = Image.open('ques.png')
+        img = Image.open('python.jpg')
         photo = ImageTk.PhotoImage(img)
         self.img_label = Label(self.root, image=photo)
         self.button = Button(self.root, text="Hello, world!",command = self.click,width=50,height=5)
