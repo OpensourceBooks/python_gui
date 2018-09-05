@@ -9,14 +9,16 @@ class App():
     def widget(self):
         self.root = Tk()
         self.root.title("app")
-        img = Image.open('python.jpg')
-        photo = ImageTk.PhotoImage(img)
-        self.img_label = Label(self.root, image=photo)
+        self.im=Image.open("python.jpg")
+        self.img=ImageTk.PhotoImage(self.im)
+        self.img_label=Label(self.root,image=self.img)
         self.button = Button(self.root, text="Hello, world!",command = self.click,width=50,height=5)
 
     def pack(self):
         self.button.pack()
         self.img_label.pack()
+        #self.label.place(x=0,y=0)
+
 
     #events
     def click(self):
